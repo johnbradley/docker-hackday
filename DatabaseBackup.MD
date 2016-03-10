@@ -12,3 +12,8 @@ docker exec -i -t <name> sh -c 'mysqldump --password=$MYSQL_ROOT_PASSWORD --all-
 Using ```sh --c '...'``` uses the environment variables in the container we are exec'ing in.
 
 
+Postgres:
+So we were able to run this:
+```
+docker exec -i -t some-postgres sh -c 'pg_dumpall -U postgres'
+```
