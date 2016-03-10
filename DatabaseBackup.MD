@@ -15,5 +15,5 @@ Using ```sh --c '...'``` uses the environment variables in the container we are 
 Postgres:
 So we were able to run this:
 ```
-docker exec -i -t some-postgres sh -c 'pg_dumpall -U postgres'
+docker exec -i -t some-postgres pg_dumpall -U postgres
 ```
