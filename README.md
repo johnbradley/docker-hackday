@@ -28,3 +28,21 @@ Additional resources:
 
 * We have a VM on [Research Toolkits](https://rtoolkits.web.duke.edu/projects/15), with docker 1.10.2 installed. It’s got 8 CPUs and 32GB RAM. Create your own local account.
 * Also created a CIFS scratch space (100GB), named docker-hackday.
+
+## Who
+
+* [Dan Leehr], [Dan Somers], [Darren Boss], [John Bradley], [Hilmar Lapp] (all GCB Informatics)
+* [Jack Hill] (Duke Libraries)
+
+## Targets
+
+* Encapsulating storage in a container so that the provisioning protocol is abstracted out. (Dan L, Jack)
+* Container that can connect to a running database container and obtain and store a backup. (Dan S, Darren, John)
+* Trusted docker repositories, and signed images. (Hilmar)
+
+[Dan Leehr]: http://github.com/dleehr
+[Dan Somers]: http://github.com/dansomers
+[Darren Boss]: http://github.com/netscruff
+[John Bradley]: http://github.com/johnbradley
+[Hilmar Lapp]: http://github.com/hlapp
+[Jack Hill]: http://github.com/jackhill
