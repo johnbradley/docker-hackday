@@ -17,3 +17,5 @@ So we were able to run this:
 ```
 docker exec -i -t some-postgres pg_dumpall -U postgres
 ```
+
+How to run postgres with passing in a directory.
