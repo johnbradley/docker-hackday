@@ -13,9 +13,18 @@ Using ```sh --c '...'``` uses the environment variables in the container we are 
 
 
 Postgres:
-So we were able to run this:
+So we were able to run this to backup stuff:
 ```
 docker exec -i -t some-postgres pg_dumpall -U postgres
 ```
 
 How to run postgres with passing in a directory.
+This one is pretty heavy handed using /tmp/pgdata in container and host.
+```
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -e PGDATA=/tmp/pgdata -v /tmp/pgdata:/tmp/pgdata -d postgres
+```
+
+This one mounts /tmp/data2 on host and /var/lib/postgresql/data in container. PGDATA default in this images is /var/lib/postgresql/data.
+```
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -v /tmp/data2:/var/lib/postgresql/data -d postgres
+```
