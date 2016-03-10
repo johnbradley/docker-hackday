@@ -23,3 +23,8 @@ Additional resources:
 - [Some presentations](https://rc.duke.edu/duke-docker-day-videos/) from last year's Duke Docker Day:
  - [Chris Collins](https://rc.duke.edu/chris-collins-duke-docker-day-2/) - Great examples of using docker to administer systems without installing a bunch of extra software
  - [Mark McCahill](https://rc.duke.edu/mark-mccahill-duke-docker-day-2/) - On RStudio and other vm-manage docker images
+
+## Resources
+
+* We have a VM on [Research Toolkits](https://rtoolkits.web.duke.edu/projects/15), with docker 1.10.2 installed. It’s got 8 CPUs and 32GB RAM. Create your own local account.
+* Also created a CIFS scratch space (100GB), named docker-hackday.
